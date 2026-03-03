@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EduFlex Platform</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: #0f172a;
+  color: white;
+  line-height: 1.6;
+}
+
+section {
+  padding: 80px 10%;
+}
+
+h1, h2, h3 {
+  margin-bottom: 20px;
+}
+
+.btn {
+  background: linear-gradient(90deg, #2563eb, #7c3aed);
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.hero {
+  text-align: center;
+  padding: 120px 10%;
+  background: linear-gradient(135deg, #1e3a8a, #6d28d9);
+}
+
+.hero h1 {
+  font-size: 48px;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 20px auto;
+  opacity: 0.9;
+}
+
+.grid {
+  display: grid;
+  gap: 30px;
+}
+
+.services-grid {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.card {
+  background: #1e293b;
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.pricing-card {
+  text-align: center;
+}
+
+.testimonial {
+  font-style: italic;
+  opacity: 0.8;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  margin-top: 5px;
+}
+
+button {
+  background: linear-gradient(90deg, #2563eb, #7c3aed);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
+
+@media(max-width:768px){
+  .hero h1{
+    font-size: 32px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Flexible On-Demand Tutoring for High School & University</h1>
+  <p>EduFlex Platform lets you choose subjects, book sessions individually, and pay per session — no long-term contracts.</p>
+  <a href="#booking" class="btn">Book a Session</a>
+</section>
+
+<!-- PROBLEM & SOLUTION -->
+<section>
+  <h2>Why EduFlex?</h2>
+  <div class="grid services-grid">
+    <div class="card">
+      <h3>The Problem</h3>
+      <p>Traditional tutoring is expensive, rigid, and requires long-term packages that may not fit your schedule.</p>
+    </div>
+    <div class="card">
+      <h3>Our Solution</h3>
+      <p>EduFlex provides flexible, pay-per-session tutoring tailored to your academic needs.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section>
+  <h2>Our Services</h2>
+  <div class="grid services-grid">
+    <div class="card">High School Subjects</div>
+    <div class="card">University Subjects</div>
+    <div class="card">Short Intensive Courses</div>
+    <div class="card">Academic Consulting</div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section>
+  <h2>How It Works</h2>
+  <div class="grid services-grid">
+    <div class="card">1️⃣ Choose Subject</div>
+    <div class="card">2️⃣ Select Sessions</div>
+    <div class="card">3️⃣ Match with Tutor</div>
+    <div class="card">4️⃣ Pay Per Session</div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section>
+  <h2>Transparent Pricing</h2>
+  <div class="grid services-grid">
+    <div class="card pricing-card">
+      <h3>High School</h3>
+      <p>$25 / session</p>
+    </div>
+    <div class="card pricing-card">
+      <h3>University</h3>
+      <p>$35 / session</p>
+    </div>
+    <div class="card pricing-card">
+      <h3>Short Course</h3>
+      <p>$50 / session</p>
+    </div>
+  </div>
+</section>
+
+<!-- TUTORS -->
+<section>
+  <h2>Meet Our Tutors</h2>
+  <div class="grid services-grid">
+    <div class="card">
+      <h3>Emily Tran</h3>
+      <p>Mathematics Specialist</p>
+    </div>
+    <div class="card">
+      <h3>Daniel Nguyen</h3>
+      <p>Computer Science Lecturer</p>
+    </div>
+    <div class="card">
+      <h3>Sarah Pham</h3>
+      <p>IELTS & English Expert</p>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section>
+  <h2>What Students Say</h2>
+  <div class="grid services-grid">
+    <div class="card testimonial">
+      "EduFlex helped me pass Calculus with confidence!"
+    </div>
+    <div class="card testimonial">
+      "Flexible scheduling fits perfectly with my university life."
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section>
+  <h2>FAQ</h2>
+  <div class="card">
+    <h3>Do I need to commit long term?</h3>
+    <p>No, you pay per session only.</p>
+  </div>
+  <div class="card">
+    <h3>Can I change tutor?</h3>
+    <p>Yes, you can switch tutors anytime.</p>
+  </div>
+</section>
+
+<!-- BOOKING FORM -->
+<section id="booking">
+  <h2>Book Your Session</h2>
+  <form>
+    <div class="form-group">
+      <label>Full Name</label>
+      <input type="text" required>
+    </div>
+    <div class="form-group">
+      <label>Email</label>
+      <input type="email" required>
+    </div>
+    <div class="form-group">
+      <label>Select Subject</label>
+      <select>
+        <option>Mathematics</option>
+        <option>Physics</option>
+        <option>Computer Science</option>
+        <option>English</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label>Select Date</label>
+      <input type="date">
+    </div>
+    <button type="submit">Confirm Booking</button>
+  </form>
+</section>
+
+</body>
+</html>
