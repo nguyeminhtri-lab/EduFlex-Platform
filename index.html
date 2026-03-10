@@ -40,7 +40,7 @@ h1, h2, h3 {
 
 .hero {
   text-align: center;
-  padding: 120px 10%;
+  padding: 100px 10%;
   background: linear-gradient(135deg, #1e3a8a, #6d28d9);
 }
 
@@ -99,9 +99,37 @@ button {
   cursor: pointer;
 }
 
+/* =========================================
+   CSS CHO HÌNH ẢNH 
+   ========================================= */
+.logo {
+  max-width: 250px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.banner-img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+.card-img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
 @media(max-width:768px){
   .hero h1{
     font-size: 32px;
+  }
+  .banner-img {
+    height: 200px;
   }
 }
 </style>
@@ -109,16 +137,19 @@ button {
 
 <body>
 
-<!-- HERO -->
 <section class="hero">
+  <img src="ảnh web bus.logo.jpg" alt="EduFlex Logo" class="logo">
+  
   <h1>Flexible On-Demand Tutoring for High School & University</h1>
   <p>EduFlex Platform lets you choose subjects, book sessions individually, and pay per session — no long-term contracts.</p>
   <a href="#booking" class="btn">Book a Session</a>
 </section>
 
-<!-- PROBLEM & SOLUTION -->
 <section>
   <h2>Why EduFlex?</h2>
+  
+  <img src="ảnh web bus.jpg2.jpg" alt="Students studying together" class="banner-img">
+  
   <div class="grid services-grid">
     <div class="card">
       <h3>The Problem</h3>
@@ -131,18 +162,30 @@ button {
   </div>
 </section>
 
-<!-- SERVICES -->
 <section>
   <h2>Our Services</h2>
   <div class="grid services-grid">
-    <div class="card">High School Subjects</div>
-    <div class="card">University Subjects</div>
-    <div class="card">Short Intensive Courses</div>
-    <div class="card">Academic Consulting</div>
+    <div class="card">
+      <img src="ảnh web bus.jpg1.jpg" alt="High School Math" class="card-img">
+      <h3>High School Subjects</h3>
+      <p>Comprehensive support for all core subjects.</p>
+    </div>
+    <div class="card">
+      <h3>University Subjects</h3>
+      <p>Advanced tutoring for specialized degree courses.</p>
+    </div>
+    <div class="card">
+      <img src="ảnh web bus.jpg" alt="IELTS Course" class="card-img">
+      <h3>Short Intensive Courses</h3>
+      <p>Focused prep for exams like IELTS, SAT, etc.</p>
+    </div>
+    <div class="card">
+      <h3>Academic Consulting</h3>
+      <p>Guidance on study paths and university admissions.</p>
+    </div>
   </div>
 </section>
 
-<!-- HOW IT WORKS -->
 <section>
   <h2>How It Works</h2>
   <div class="grid services-grid">
@@ -153,7 +196,6 @@ button {
   </div>
 </section>
 
-<!-- PRICING -->
 <section>
   <h2>Transparent Pricing</h2>
   <div class="grid services-grid">
@@ -172,7 +214,6 @@ button {
   </div>
 </section>
 
-<!-- TUTORS -->
 <section>
   <h2>Meet Our Tutors</h2>
   <div class="grid services-grid">
@@ -191,7 +232,6 @@ button {
   </div>
 </section>
 
-<!-- TESTIMONIALS -->
 <section>
   <h2>What Students Say</h2>
   <div class="grid services-grid">
@@ -204,10 +244,9 @@ button {
   </div>
 </section>
 
-<!-- FAQ -->
 <section>
   <h2>FAQ</h2>
-  <div class="card">
+  <div class="card" style="margin-bottom: 20px;">
     <h3>Do I need to commit long term?</h3>
     <p>No, you pay per session only.</p>
   </div>
@@ -217,7 +256,6 @@ button {
   </div>
 </section>
 
-<!-- BOOKING FORM -->
 <section id="booking">
   <h2>Book Your Session</h2>
   <form>
